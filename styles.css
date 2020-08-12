@@ -79,19 +79,19 @@ input[type="text"] {
     background: #fff;
     border-radius: 6px;
     font-family: sans-serif;
-    color: #888;
+    color: rgb(34, 15, 15);
 }
 input[type="text"]:focus{
     color: #333;
 }
 #time{
     margin-left: 10px;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 15px;
     border: 1px solid #ddd;
     background: #fff;
     border-radius: 6px;
-    
+    color: black;
 }
 /* New Task */
 label[for='new-task']{
@@ -109,28 +109,17 @@ li{
     padding: 20px 0;
     border-bottom: 1px solid #eee;
 }
-li>input[type="checkbox"]{
-    margin: 0 10px;
-    position: relative;
-    top: 15px;
-}
 li>label{
     font-size: 18px;
     line-height: 40px;
     width: 237px;
-    padding: 0 0 0 11px;
+    padding: 0 0 5px 11px;
 }
 li>input[type="text"]{
     width: 226px;
 }
 li>.delete:hover{
     color: #CF2323;
-}
-
-/* Completed */
-#completed-tasks label {
-    text-decoration: line-through;
-    color: #888;
 }
 
 /* Edit Task */
@@ -148,12 +137,28 @@ ul li.editMode label{
     float: right;
     text-align: center;
 }
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 765px) {
     body {
         background: #f0be62;
     }
     input#new-task{
-        width: 250px;
+        width: 220px;
+    }
+    .container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 580px) {
+    input#new-task{
+        width: 180px;
+    }
+    input#time{
+        margin: 10px;
+    }
+    .container{
+        width: 80%;
+      
     }
 }
 @media screen and (max-width: 471px) {
@@ -166,5 +171,27 @@ ul li.editMode label{
     }
     input#time{
         margin: 10px;
+    }
+    #title{
+        margin-top: 5px;
+        font-size: 20px;
+      
+    }
+    .container{
+        width: 80%;
+      
+    }
+    .description{
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 2px;
+    }
+    button.completed{
+      margin-left: 237px;
+  }
+}
+@media screen and (max-width: 380px) {
+    button.completed{
+        margin-left: 0px;
     }
 }
