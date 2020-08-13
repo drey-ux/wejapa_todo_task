@@ -165,10 +165,10 @@ ul li.editMode label{
 @media screen and (max-width: 471px) {
     body {
         font-size: .5rem;
-        background: #f0be62;
+        background: rgb(22, 31, 12);
     }
     input#new-task{
-        width: 150px;
+        width: 250px;
     }
     input#time{
         margin: 10px;
