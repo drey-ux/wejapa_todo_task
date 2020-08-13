@@ -3,7 +3,7 @@ body{
     background: #fff;
     color: #333;
     font-family: sans-serif;
-    background: #f0be62;
+    background: black;
 }
 #title{
     margin-top: 5px;
@@ -24,7 +24,7 @@ body{
     text-align: center;
     line-height: 25px;
     font-style: oblique;
-    color: #99740f;
+    color: black;
 }
 ul{
     margin: 0;
