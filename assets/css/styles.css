@@ -168,7 +168,7 @@ ul li.editMode label{
         background: rgb(22, 31, 12);
     }
     input#new-task{
-        width: 250px;
+        width: 230px;
     }
     input#time{
         margin: 10px;
