@@ -8,7 +8,7 @@
     <!--AOS CSS-->
     <link href="./assets/css/aos.css" rel="stylesheet">
     <link rel="icon" type="image/ico" href="/assets/favicon.ico">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 </head>
 <body>
     
@@ -18,7 +18,7 @@
             <p class="description">This is an app that helps you list and schedule tasks and appointments</p>
             <p>
                 <label for="new-task">Add Task</label>
-                <input id="new-task" type="text" placeholder="Enter task"><input type="time" id="time" required>
+                <input id="new-task" type="text" placeholder="Enter task"><input type="time" class="timepicker" id="time">
                 <button id="addButton">Add Task</button>
             </p>
         </div>
@@ -53,6 +53,15 @@
 	<!--AOS-->
 	<script>
 		AOS.init();
-	</script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script>
+
+
+$(document).ready(function(){
+    $('input.timepicker').timepicker({});
+});
+
+    </script>
 </body>
 </html>

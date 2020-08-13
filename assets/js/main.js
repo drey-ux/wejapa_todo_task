@@ -113,3 +113,4 @@ let clear = function() {
 
 //EVENT LISTENER FOR CLEAR..........................................................................................
 clearButton.addEventListener('click', clear);
+
