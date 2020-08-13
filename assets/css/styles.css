@@ -138,7 +138,9 @@ ul li.editMode label{
     float: right;
     text-align: center;
 }
-
+button.delete, button.completed{
+    margin-left: 100px;
+}
 
 @media screen and (max-width: 765px) {
     body {

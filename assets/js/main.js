@@ -8,15 +8,15 @@ let createNewTask = function(taskName,taskTime) {
     let listItem = document.createElement("li");
     // let checkBox = document.createElement("input");
     let label = document.createElement("label");
-    let editInput = document.createElement("input");
-    let editButton = document.createElement("button");
+    // let editInput = document.createElement("input");
+    // let editButton = document.createElement("button");
     let deleteButton = document.createElement("button");
     let completedButton = document.createElement("button");
 
     // checkBox.type = "checkBox";
-    editInput.type = "text";
-    editButton.innerText = "Edit";
-    editButton.className = "edit";
+    // editInput.type = "text";
+    // editButton.innerText = "Edit";
+    // editButton.className = "edit";
     deleteButton.innerText = "Delete";
     deleteButton.className = "delete";
     completedButton.innerText = "Completed";
@@ -25,8 +25,8 @@ let createNewTask = function(taskName,taskTime) {
     // label.innerText = taskTime.value + " - " + taskName;
     // listItem.appendChild(checkBox);
     listItem.appendChild(label);
-    listItem.appendChild(editInput);
-    listItem.appendChild(editButton);
+    // listItem.appendChild(editInput);
+    // listItem.appendChild(editButton);
     listItem.appendChild(deleteButton);
     listItem.appendChild(completedButton);
 
@@ -51,19 +51,19 @@ let addTask = function() {
 }
 
 //EDIT TASK..............................................................................................................
-let editTask = function() {
+// let editTask = function() {
 
-    let listItem = this.parentNode;
-    let editInput = listItem.querySelector("input[type=text]");
-    let label = listItem.querySelector("label");
-    let containsClass = listItem.classList.contains("editMode");
-    if (containsClass) {
-        label.innerText = editInput.value;
-    } else {
-        editInput.value = label.innerText;
-    }
-    listItem.classList.toggle("editMode");
-}
+//     let listItem = this.parentNode;
+//     let editInput = listItem.querySelector("input[type=text]");
+//     let label = listItem.querySelector("label");
+//     let containsClass = listItem.classList.contains("editMode");
+//     if (containsClass) {
+//         label.innerText = editInput.value;
+//     } else {
+//         editInput.value = label.innerText;
+//     }
+//     listItem.classList.toggle("editMode");
+// }
 
 //DELETE TASK..........................................................................................................
 let deleteTask = function() {
@@ -77,8 +77,8 @@ let taskCompleted = function() {
     let listItem = this.parentNode;
     const completedButton = listItem.getElementsByClassName("completed");
     listItem.removeChild(completedButton[0]);
-    const editButton = listItem.getElementsByClassName("edit");
-    listItem.removeChild(editButton[0]);
+    // const editButton = listItem.getElementsByClassName("edit");
+    // listItem.removeChild(editButton[0]);
     completedTasks.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 }
@@ -96,10 +96,10 @@ addButton.addEventListener('click', addTask);
 
 let bindTaskEvents = function(taskListItem, checkBoxEventHandler) {
     // let checkBox = taskListItem.querySelector('input[type="checkbox"]');
-    let editButton = taskListItem.querySelector("button.edit");
+    // let editButton = taskListItem.querySelector("button.edit");
     let deleteButton = taskListItem.querySelector("button.delete");
     let completedButton = taskListItem.querySelector("button.completed");
-    editButton.onclick = editTask;
+    // editButton.onclick = editTask;
     deleteButton.onclick = deleteTask;
     completedButton.onclick = checkBoxEventHandler;
     // checkBox.onchange = checkBoxEventHandler;
