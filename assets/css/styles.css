@@ -175,16 +175,18 @@ ul li.editMode label{
     }
     #title{
         margin-top: 5px;
-        font-size: 20px;
-        font-family: 'Courier New', Courier, monospace;
+        font-size: 17px;
+        font-family: sans-serif;
+        text-transform: uppercase;
     }
     .container{
         width: 80%;
     }
     .description{
-        font-size: 15px;
+        font-size: 13px;
         line-height: 17px;
         letter-spacing: 2px;
+        color: black;
     }
     button.completed{
       margin-left: 237px;
