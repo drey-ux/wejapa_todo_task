@@ -54,8 +54,6 @@ let addTask = function() {
 let editTask = function() {
 
     let listItem = this.parentNode;
-    const editButton = listItem.getElementsByClassName("edit");
-    listItem.removeChild(editButton[0]);
     let editInput = listItem.querySelector("input[type=text]");
     let label = listItem.querySelector("label");
     let containsClass = listItem.classList.contains("editMode");
@@ -79,6 +77,8 @@ let taskCompleted = function() {
     let listItem = this.parentNode;
     const completedButton = listItem.getElementsByClassName("completed");
     listItem.removeChild(completedButton[0]);
+    const editButton = listItem.getElementsByClassName("edit");
+    listItem.removeChild(editButton[0]);
     completedTasks.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 }
