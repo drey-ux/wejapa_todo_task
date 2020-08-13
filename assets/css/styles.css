@@ -87,7 +87,7 @@ input[type="text"]:focus{
 }
 #time{
     margin-left: 10px;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 15px;
     border: 1px solid #ddd;
     background: #fff;
@@ -117,7 +117,7 @@ li>label{
     padding: 0 0 5px 11px;
 }
 li>input[type="text"]{
-    width: 226px;
+    width: 200px;
 }
 li>.delete:hover{
     color: #CF2323;
@@ -139,7 +139,7 @@ ul li.editMode label{
     text-align: center;
 }
 button.delete, button.completed{
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 @media screen and (max-width: 765px) {
