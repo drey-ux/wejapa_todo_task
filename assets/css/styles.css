@@ -1,3 +1,4 @@
+/* BODY */
 body{
     background: #fff;
     color: #333;
@@ -179,7 +180,6 @@ ul li.editMode label{
     }
     .container{
         width: 80%;
-        
     }
     .description{
         font-size: 15px;
